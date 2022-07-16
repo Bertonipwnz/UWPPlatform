@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="UWPPlatform.ValueConverter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPPlatform"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <local:DateTimeOffsetToStringConverter x:Key="converterStringToData" />
+    </Page.Resources>
+    
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <DatePicker x:Name="calendar" />
+        <TextBlock Text="{Binding ElementName=calendar, Path=Date}" />
+
+        <DatePicker x:Name="calendar2"/>
+        <TextBlock Text="{Binding ElementName=calendar2, Path=Date,Converter={StaticResource converterStringToData}}" />
+
+        <DatePicker x:Name="calendar3"/>
+        <TextBlock Text="{Binding ElementName=calendar3, Path=Date, 
+        Converter={StaticResource converterStringToData}, 
+        ConverterParameter=full, ConverterLanguage=en-US}" />
+    </StackPanel>
+</Page>

@@ -19,6 +19,7 @@
                 <NavigationViewItem Content="DataContextWithINotifyPropertyChanged" Name="DataContextWithINotifyPropertyChanged"/>
                 <NavigationViewItem Content="Bind" Name="Bind"/>
                 <NavigationViewItem Content="BindingsUpdate" Name="BindingsUpdate"/>
+                <NavigationViewItem Content="ValueConverter" Name="ValueConverter"/>
             </NavigationView.MenuItems>
             <Frame x:Name="ContentFrame"/>
         </NavigationView>
