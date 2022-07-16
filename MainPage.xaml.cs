@@ -44,6 +44,12 @@ namespace UWPPlatform
                 case "BindingWithSource":
                     ContentFrame.Navigate(typeof(BindingWithSource));
                     break;
+                case "DataContext":
+                    ContentFrame.Navigate(typeof(DataContext));
+                    break;
+                case "DataContextWithFrameworkElement":
+                    ContentFrame.Navigate(typeof(DataContextWithFrameworkElement));
+                    break;
             }
         }
     }

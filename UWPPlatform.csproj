@@ -125,6 +125,13 @@
     <Compile Include="BindingWithSource.xaml.cs">
       <DependentUpon>BindingWithSource.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Car.cs" />
+    <Compile Include="DataContext.xaml.cs">
+      <DependentUpon>DataContext.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataContextWithFrameworkElement.xaml.cs">
+      <DependentUpon>DataContextWithFrameworkElement.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -156,6 +163,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="BindingWithSource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataContext.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataContextWithFrameworkElement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
