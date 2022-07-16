@@ -141,11 +141,15 @@
     <Compile Include="DataContextWithINotifyPropertyChanged.xaml.cs">
       <DependentUpon>DataContextWithINotifyPropertyChanged.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DateTimeOffsetToStringConverter.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Phone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValueConverter.xaml.cs">
+      <DependentUpon>ValueConverter.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -198,6 +202,10 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ValueConverter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

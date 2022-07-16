@@ -59,6 +59,9 @@ namespace UWPPlatform
                 case "BindingsUpdate":
                     ContentFrame.Navigate(typeof(BindingUpdate));
                     break;
+                case "ValueConverter":
+                    ContentFrame.Navigate(typeof(ValueConverter));
+                    break;
             }
         }
     }
