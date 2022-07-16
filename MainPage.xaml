@@ -16,6 +16,8 @@
                 <NavigationViewItem Content="BindingWithSource" Name="BindingWithSource"></NavigationViewItem>
                 <NavigationViewItem Content="DataContext" Name="DataContext"></NavigationViewItem>
                 <NavigationViewItem Content="DataContextWithFrameworkElement" Name="DataContextWithFrameworkElement"></NavigationViewItem>
+                <NavigationViewItem Content="DataContextWithINotifyPropertyChanged" Name="DataContextWithINotifyPropertyChanged">
+                </NavigationViewItem>
             </NavigationView.MenuItems>
             <Frame x:Name="ContentFrame"/>
         </NavigationView>

@@ -50,6 +50,9 @@ namespace UWPPlatform
                 case "DataContextWithFrameworkElement":
                     ContentFrame.Navigate(typeof(DataContextWithFrameworkElement));
                     break;
+                case "DataContextWithINotifyPropertyChanged":
+                    ContentFrame.Navigate(typeof(DataContextWithINotifyPropertyChanged));
+                    break;
             }
         }
     }
