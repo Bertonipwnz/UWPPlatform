@@ -20,6 +20,7 @@
                 <NavigationViewItem Content="Bind" Name="Bind"/>
                 <NavigationViewItem Content="BindingsUpdate" Name="BindingsUpdate"/>
                 <NavigationViewItem Content="ValueConverter" Name="ValueConverter"/>
+                <NavigationViewItem Content="VisualState" Name="VisualState"/>
             </NavigationView.MenuItems>
             <Frame x:Name="ContentFrame"/>
         </NavigationView>

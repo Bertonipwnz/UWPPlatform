@@ -62,6 +62,9 @@ namespace UWPPlatform
                 case "ValueConverter":
                     ContentFrame.Navigate(typeof(ValueConverter));
                     break;
+                case "VisualState":
+                    ContentFrame.Navigate(typeof(VisualState));
+                    break;
             }
         }
     }
