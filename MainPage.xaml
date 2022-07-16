@@ -12,12 +12,13 @@
         <NavigationView IsBackButtonVisible="Collapsed" IsPaneToggleButtonVisible="True" IsSettingsVisible="False" 
                         ItemInvoked="NavigationView_ItemInvoked">
             <NavigationView.MenuItems>
-                <NavigationViewItem Content="Binding" Name="Binding"></NavigationViewItem>
-                <NavigationViewItem Content="BindingWithSource" Name="BindingWithSource"></NavigationViewItem>
-                <NavigationViewItem Content="DataContext" Name="DataContext"></NavigationViewItem>
-                <NavigationViewItem Content="DataContextWithFrameworkElement" Name="DataContextWithFrameworkElement"></NavigationViewItem>
-                <NavigationViewItem Content="DataContextWithINotifyPropertyChanged" Name="DataContextWithINotifyPropertyChanged">
-                </NavigationViewItem>
+                <NavigationViewItem Content="Binding" Name="Binding"/>
+                <NavigationViewItem Content="BindingWithSource" Name="BindingWithSource"/>
+                <NavigationViewItem Content="DataContext" Name="DataContext"/>
+                <NavigationViewItem Content="DataContextWithFrameworkElement" Name="DataContextWithFrameworkElement"/>
+                <NavigationViewItem Content="DataContextWithINotifyPropertyChanged" Name="DataContextWithINotifyPropertyChanged"/>
+                <NavigationViewItem Content="Bind" Name="Bind"/>
+                <NavigationViewItem Content="BindingsUpdate" Name="BindingsUpdate"/>
             </NavigationView.MenuItems>
             <Frame x:Name="ContentFrame"/>
         </NavigationView>

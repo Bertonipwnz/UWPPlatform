@@ -119,8 +119,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Bind.xaml.cs">
+      <DependentUpon>Bind.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Binding.xaml.cs">
       <DependentUpon>Binding.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BindingUpdate.xaml.cs">
+      <DependentUpon>BindingUpdate.xaml</DependentUpon>
     </Compile>
     <Compile Include="BindingWithSource.xaml.cs">
       <DependentUpon>BindingWithSource.xaml</DependentUpon>
@@ -161,7 +167,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Bind.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Binding.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BindingUpdate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

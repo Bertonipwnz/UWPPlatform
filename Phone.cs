@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 namespace UWPPlatform
@@ -58,6 +59,30 @@ namespace UWPPlatform
                     OnPropertyChanged("Price");
                 }
             }
+        }
+
+        /// <summary>
+        /// Отобразить модель в диалоговом окне
+        /// </summary>
+        public async void ShowModel()
+        {
+            await new Windows.UI.Popups.MessageDialog(this.ModelPhone).ShowAsync();
+        }
+
+        /// <summary>
+        /// Увеличить стоимость
+        /// </summary>
+        public void Increase()
+        {
+            Price += 1000;
+        }
+
+        /// <summary>
+        /// Уменьшить стоимость
+        /// </summary>
+        public void Decrease()
+        {
+            Price -= 1000;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
