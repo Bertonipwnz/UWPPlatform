@@ -53,6 +53,12 @@ namespace UWPPlatform
                 case "DataContextWithINotifyPropertyChanged":
                     ContentFrame.Navigate(typeof(DataContextWithINotifyPropertyChanged));
                     break;
+                case "Bind":
+                    ContentFrame.Navigate(typeof(Bind));
+                    break;
+                case "BindingsUpdate":
+                    ContentFrame.Navigate(typeof(BindingUpdate));
+                    break;
             }
         }
     }
