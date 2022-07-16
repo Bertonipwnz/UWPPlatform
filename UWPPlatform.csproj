@@ -150,6 +150,9 @@
     <Compile Include="ValueConverter.xaml.cs">
       <DependentUpon>ValueConverter.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VisualState.xaml.cs">
+      <DependentUpon>VisualState.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -204,6 +207,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="ValueConverter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VisualState.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
