@@ -10,29 +10,35 @@
 
 
     <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!-- Binding One Time-->
         <TextBox Text="Binding Mode = OneTime" FontSize="20" Height="50" IsReadOnly="True"/>
-        
         <!-- Источник -->
-        <TextBox x:Name="textBox" Height="50" Text="OneTime" /> 
-        
+        <TextBox x:Name="textBox" Height="50" Text="OneTime" />    
         <!-- Приёмник -->
         <TextBlock x:Name="textBlock" Text="{Binding Text, ElementName=textBox, Mode=OneTime}" Height="30" />
         
+        <!-- Binding One Way -->
         <TextBox Text="Binding Mode = OneWay" FontSize="20" Height="50" IsReadOnly="True"/>
-
         <!-- Источник -->
         <TextBox x:Name="textBox2" Height="50" Text="OneWay" />
-
         <!-- Приёмник -->
         <TextBox x:Name="textBlock2" Text="{Binding Text, ElementName=textBox2, Mode=OneWay}" Height="30" />
 
+        <!-- Binding Two Way -->
         <TextBox Text="Binding Mode = TwoWay" FontSize="20" Height="50" IsReadOnly="True"/>
-
         <!-- Источник -->
         <TextBox x:Name="textBox3" Height="50" Text="TwoWay" />
-
         <!-- Приёмник -->
         <TextBox x:Name="textBlock3" Text="{Binding Text, ElementName=textBox3, Mode=TwoWay}" Height="30" />
+
+        <!-- Binding TwoWay With UpdateSourceTrigger=PropertyChanged -->
+        <TextBox Text="Binding Mode = TwoWay With UpdateSourceTrigger=PropertyChanged" FontSize="20" Height="50" IsReadOnly="True"/>
+        <!-- Источник -->
+        <TextBox x:Name="textBox4" Height="50" Text="TwoWay" />
+        <!-- Приёмник -->
+        <TextBox x:Name="textBlock4" Text="{Binding Text, ElementName=textBox4, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Height="30" />
+        
+        
     </StackPanel>
 
 </Page>

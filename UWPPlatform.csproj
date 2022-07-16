@@ -122,9 +122,13 @@
     <Compile Include="Binding.xaml.cs">
       <DependentUpon>Binding.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BindingWithSource.xaml.cs">
+      <DependentUpon>BindingWithSource.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Phone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -148,6 +152,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="Binding.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BindingWithSource.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

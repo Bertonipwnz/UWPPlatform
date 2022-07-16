@@ -41,6 +41,9 @@ namespace UWPPlatform
                 case "Binding":
                     ContentFrame.Navigate(typeof(Binding));
                     break;
+                case "BindingWithSource":
+                    ContentFrame.Navigate(typeof(BindingWithSource));
+                    break;
             }
         }
     }

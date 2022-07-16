@@ -13,6 +13,7 @@
                         ItemInvoked="NavigationView_ItemInvoked">
             <NavigationView.MenuItems>
                 <NavigationViewItem Content="Binding" Name="Binding"></NavigationViewItem>
+                <NavigationViewItem Content="BindingWithSource" Name="BindingWithSource"></NavigationViewItem>
             </NavigationView.MenuItems>
             <Frame x:Name="ContentFrame"/>
         </NavigationView>
