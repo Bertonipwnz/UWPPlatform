@@ -12,6 +12,18 @@
         <NavigationView IsBackButtonVisible="Collapsed" IsPaneToggleButtonVisible="True" IsSettingsVisible="False" 
                         ItemInvoked="NavigationView_ItemInvoked">
             <NavigationView.MenuItems>
+                <NavigationViewItemHeader Content="Pages Layout"/>
+                <NavigationViewItem Content="Grid" Name="GridLayout" />
+                <NavigationViewItem Content="GridWithPropSize" Name="GridWithProportionalSize"/>
+                <NavigationViewItem Content="GridWithAutoSize" Name="GridWithAutoSize"/>
+                <NavigationViewItem Content="VariableSizedWrapGrid" Name="VariableSizedWrapGrid"/>
+                <NavigationViewItem Content="StackPanel" Name="StackPanelLayout"/>
+                <NavigationViewItem Content="Canvas" Name="CanvasLayout"/>
+                <NavigationViewItem Content="RelativePanel" Name="RelativePanelLayout"/>
+                <NavigationViewItem Content="SplitView" Name="SplitViewLayout"/>
+                <NavigationViewItemSeparator/>
+
+                <NavigationViewItemHeader Content="Pages Bind"/>
                 <NavigationViewItem Content="Binding" Name="Binding"/>
                 <NavigationViewItem Content="BindingWithSource" Name="BindingWithSource"/>
                 <NavigationViewItem Content="DataContext" Name="DataContext"/>
@@ -19,8 +31,15 @@
                 <NavigationViewItem Content="DataContextWithINotifyPropertyChanged" Name="DataContextWithINotifyPropertyChanged"/>
                 <NavigationViewItem Content="Bind" Name="Bind"/>
                 <NavigationViewItem Content="BindingsUpdate" Name="BindingsUpdate"/>
+                <NavigationViewItemSeparator/>
+
+                <NavigationViewItemHeader Content="Pages Converters"/>
                 <NavigationViewItem Content="ValueConverter" Name="ValueConverter"/>
+                <NavigationViewItemSeparator/>
+
+                <NavigationViewItemHeader Content="Pages VisualState"/>
                 <NavigationViewItem Content="VisualState" Name="VisualState"/>
+                <NavigationViewItemSeparator/>
             </NavigationView.MenuItems>
             <Frame x:Name="ContentFrame"/>
         </NavigationView>

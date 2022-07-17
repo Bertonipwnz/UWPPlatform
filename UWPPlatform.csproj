@@ -119,6 +119,18 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages Layout Introduction\CanvasLayout.xaml.cs">
+      <DependentUpon>CanvasLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages Layout Introduction\GridWithAutoSize.xaml.cs">
+      <DependentUpon>GridWithAutoSize.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages Layout Introduction\GridWithProportionalSize.xaml.cs">
+      <DependentUpon>GridWithProportionalSize.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages Layout Introduction\GridLayout.xaml.cs">
+      <DependentUpon>GridLayout.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages Bind\Bind.xaml.cs">
       <DependentUpon>Bind.xaml</DependentUpon>
     </Compile>
@@ -153,6 +165,18 @@
     <Compile Include="Pages VisualState\VisualState.xaml.cs">
       <DependentUpon>VisualState.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages Layout Introduction\VariableSizedWrapGrid.xaml.cs">
+      <DependentUpon>VariableSizedWrapGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages Layout Introduction\StackPanelLayout.xaml.cs">
+      <DependentUpon>StackPanelLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages Layout Introduction\RelativePanelLayout.xaml.cs">
+      <DependentUpon>RelativePanelLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages Layout Introduction\SplitViewLayout.xaml.cs">
+      <DependentUpon>SplitViewLayout.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -174,6 +198,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Pages Layout Introduction\CanvasLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages Layout Introduction\GridWithAutoSize.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages Layout Introduction\GridWithProportionalSize.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages Layout Introduction\GridLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages Bind\Bind.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -211,6 +251,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages VisualState\VisualState.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages Layout Introduction\VariableSizedWrapGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages Layout Introduction\StackPanelLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages Layout Introduction\RelativePanelLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages Layout Introduction\SplitViewLayout.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
