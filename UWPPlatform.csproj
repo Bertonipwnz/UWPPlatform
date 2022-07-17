@@ -119,38 +119,38 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Bind.xaml.cs">
+    <Compile Include="Pages Bind\Bind.xaml.cs">
       <DependentUpon>Bind.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Binding.xaml.cs">
+    <Compile Include="Pages Bind\Binding.xaml.cs">
       <DependentUpon>Binding.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BindingUpdate.xaml.cs">
+    <Compile Include="Pages Bind\BindingUpdate.xaml.cs">
       <DependentUpon>BindingUpdate.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BindingWithSource.xaml.cs">
+    <Compile Include="Pages Bind\BindingWithSource.xaml.cs">
       <DependentUpon>BindingWithSource.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Car.cs" />
-    <Compile Include="DataContext.xaml.cs">
+    <Compile Include="Classes\Car.cs" />
+    <Compile Include="Pages Bind\DataContext.xaml.cs">
       <DependentUpon>DataContext.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DataContextWithFrameworkElement.xaml.cs">
+    <Compile Include="Pages Bind\DataContextWithFrameworkElement.xaml.cs">
       <DependentUpon>DataContextWithFrameworkElement.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DataContextWithINotifyPropertyChanged.xaml.cs">
+    <Compile Include="Pages Bind\DataContextWithINotifyPropertyChanged.xaml.cs">
       <DependentUpon>DataContextWithINotifyPropertyChanged.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DateTimeOffsetToStringConverter.cs" />
+    <Compile Include="Converters\DateTimeOffsetToStringConverter.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Phone.cs" />
+    <Compile Include="Classes\Phone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ValueConverter.xaml.cs">
+    <Compile Include="Pages Converter\ValueConverter.xaml.cs">
       <DependentUpon>ValueConverter.xaml</DependentUpon>
     </Compile>
-    <Compile Include="VisualState.xaml.cs">
+    <Compile Include="Pages VisualState\VisualState.xaml.cs">
       <DependentUpon>VisualState.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -174,31 +174,31 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Bind.xaml">
+    <Page Include="Pages Bind\Bind.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Binding.xaml">
+    <Page Include="Pages Bind\Binding.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="BindingUpdate.xaml">
+    <Page Include="Pages Bind\BindingUpdate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="BindingWithSource.xaml">
+    <Page Include="Pages Bind\BindingWithSource.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DataContext.xaml">
+    <Page Include="Pages Bind\DataContext.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DataContextWithFrameworkElement.xaml">
+    <Page Include="Pages Bind\DataContextWithFrameworkElement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DataContextWithINotifyPropertyChanged.xaml">
+    <Page Include="Pages Bind\DataContextWithINotifyPropertyChanged.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -206,11 +206,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ValueConverter.xaml">
+    <Page Include="Pages Converter\ValueConverter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="VisualState.xaml">
+    <Page Include="Pages VisualState\VisualState.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -220,6 +220,7 @@
       <Version>6.2.13</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
