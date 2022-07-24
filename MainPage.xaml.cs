@@ -1,24 +1,23 @@
 ﻿using Windows.UI.Xaml.Controls;
 
-// Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x419
-
 namespace UWPPlatform
 {
     /// <summary>
-    /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
+    /// Главная страница.
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        /// <summary>
+        /// Конструктор <see cref="MainPage"/>
+        /// </summary>
         public MainPage()
         {
             this.InitializeComponent();
         }
-
+        
         /// <summary>
-        /// Навигация
+        /// Навигация.
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="args"></param>
         private void NavigationView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
         {
             var item = args.InvokedItemContainer;
@@ -75,6 +74,9 @@ namespace UWPPlatform
                     break;
                 case "VisualState":
                     ContentFrame.Navigate(typeof(VisualState));
+                    break;
+                case "ViewNewTransaction":
+                    ContentFrame.Navigate(typeof(ViewNewTransaction));
                     break;
             }
         }

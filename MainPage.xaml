@@ -2,46 +2,50 @@
     x:Class="UWPPlatform.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:UWPPlatform"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:UWPPlatform"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
 
     <Grid>
-        <NavigationView IsBackButtonVisible="Collapsed" IsPaneToggleButtonVisible="True" IsSettingsVisible="False" 
-                        ItemInvoked="NavigationView_ItemInvoked">
+        <NavigationView
+            IsBackButtonVisible="Collapsed"
+            IsPaneToggleButtonVisible="True"
+            IsSettingsVisible="False"
+            ItemInvoked="NavigationView_ItemInvoked">
             <NavigationView.MenuItems>
-                <NavigationViewItemHeader Content="Pages Layout"/>
-                <NavigationViewItem Content="Grid" Name="GridLayout" />
-                <NavigationViewItem Content="GridWithPropSize" Name="GridWithProportionalSize"/>
-                <NavigationViewItem Content="GridWithAutoSize" Name="GridWithAutoSize"/>
-                <NavigationViewItem Content="VariableSizedWrapGrid" Name="VariableSizedWrapGrid"/>
-                <NavigationViewItem Content="StackPanel" Name="StackPanelLayout"/>
-                <NavigationViewItem Content="Canvas" Name="CanvasLayout"/>
-                <NavigationViewItem Content="RelativePanel" Name="RelativePanelLayout"/>
-                <NavigationViewItem Content="SplitView" Name="SplitViewLayout"/>
-                <NavigationViewItemSeparator/>
+                <NavigationViewItemHeader Content="Pages Layout" />
+                <NavigationViewItem Name="GridLayout" Content="Grid" />
+                <NavigationViewItem Name="GridWithProportionalSize" Content="GridWithPropSize" />
+                <NavigationViewItem Name="GridWithAutoSize" Content="GridWithAutoSize" />
+                <NavigationViewItem Name="VariableSizedWrapGrid" Content="VariableSizedWrapGrid" />
+                <NavigationViewItem Name="StackPanelLayout" Content="StackPanel" />
+                <NavigationViewItem Name="CanvasLayout" Content="Canvas" />
+                <NavigationViewItem Name="RelativePanelLayout" Content="RelativePanel" />
+                <NavigationViewItem Name="SplitViewLayout" Content="SplitView" />
+                <NavigationViewItemSeparator />
 
-                <NavigationViewItemHeader Content="Pages Bind"/>
-                <NavigationViewItem Content="Binding" Name="Binding"/>
-                <NavigationViewItem Content="BindingWithSource" Name="BindingWithSource"/>
-                <NavigationViewItem Content="DataContext" Name="DataContext"/>
-                <NavigationViewItem Content="DataContextWithFrameworkElement" Name="DataContextWithFrameworkElement"/>
-                <NavigationViewItem Content="DataContextWithINotifyPropertyChanged" Name="DataContextWithINotifyPropertyChanged"/>
-                <NavigationViewItem Content="Bind" Name="Bind"/>
-                <NavigationViewItem Content="BindingsUpdate" Name="BindingsUpdate"/>
-                <NavigationViewItemSeparator/>
+                <NavigationViewItemHeader Content="Pages Bind" />
+                <NavigationViewItem Name="Binding" Content="Binding" />
+                <NavigationViewItem Name="BindingWithSource" Content="BindingWithSource" />
+                <NavigationViewItem Name="DataContext" Content="DataContext" />
+                <NavigationViewItem Name="DataContextWithFrameworkElement" Content="DataContextWithFrameworkElement" />
+                <NavigationViewItem Name="DataContextWithINotifyPropertyChanged" Content="DataContextWithINotifyPropertyChanged" />
+                <NavigationViewItem Name="Bind" Content="Bind" />
+                <NavigationViewItem Name="BindingsUpdate" Content="BindingsUpdate" />
+                <NavigationViewItemSeparator />
 
-                <NavigationViewItemHeader Content="Pages Converters"/>
-                <NavigationViewItem Content="ValueConverter" Name="ValueConverter"/>
-                <NavigationViewItemSeparator/>
+                <NavigationViewItemHeader Content="Pages Converters" />
+                <NavigationViewItem Name="ValueConverter" Content="ValueConverter" />
+                <NavigationViewItemSeparator />
 
-                <NavigationViewItemHeader Content="Pages VisualState"/>
-                <NavigationViewItem Content="VisualState" Name="VisualState"/>
-                <NavigationViewItemSeparator/>
+                <NavigationViewItemHeader Content="Pages VisualState" />
+                <NavigationViewItem Name="VisualState" Content="VisualState" />
+                <NavigationViewItem Name="ViewNewTransaction" Content="ViewNewTransaction" />
+                <NavigationViewItemSeparator />
             </NavigationView.MenuItems>
-            <Frame x:Name="ContentFrame"/>
+            <Frame x:Name="ContentFrame" />
         </NavigationView>
     </Grid>
 </Page>
